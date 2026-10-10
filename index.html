@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Cinema</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <p class="etiqueta">CATÁLOGO DE CINEMA</p>
+    <h1>Atores & Atrizes</h1>
+    <p class="subtitulo">Conheça alguns rostos conhecidos das telas.</p>
+  </header>
+
+  <main>
+    <section class="pesquisa" aria-label="Pesquisar pessoas">
+      <label for="busca">Encontre uma pessoa</label>
+      <input id="busca" type="text" placeholder="Digite um nome..." oninput="filtrarAtores()">
+      <p id="contador" class="contador" aria-live="polite"></p>
+    </section>
+
+    <section class="grid" aria-label="Lista de atores e atrizes"></section>
+  </main>
+
+  <footer>Catálogo criado para atividade de HTML, CSS e JavaScript.</footer>
+
+  <script src="dados.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
